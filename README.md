@@ -19,14 +19,14 @@ Update the profile for a specific user account.
 
 ```
 {
- username: "NewUsername",
- email: "Email@Email.com"
+	username: "NewUsername",
+	email: "Email@Email.com"
 }
 ```
 
 ### Example Response
 ```
 {
- success: true
+	userId: 1692
 }
 ```
