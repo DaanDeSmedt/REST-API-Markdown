@@ -12,7 +12,7 @@ Update the profile for a specific user account.
 
 ### Body
 - **username** - Username to update to
-- **email** - E-mail address to update to
+- **email** - E-mail address to update to2
 
 ### Example Request
 `GET /account/1692/profile`
