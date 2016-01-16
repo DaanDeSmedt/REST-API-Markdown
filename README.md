@@ -1,21 +1,40 @@
-## Get User Profile
-Get the profile for a specific sessions user account.
+## Update User Profile
+Update the profile for a specific user account.
 
-**URL** | /api/v1/profile
---- | ---
-**Method** | GET
-**Content-Type** | application/json
-**Authentication** | Required
+`PUT /account/{userId}/profile`
 
-### Parameters
- Key | Type | Description
---- | --- | ---
-**sessionId** | String | Session identifier
-**sessionSecret** | String | Session secret
+## Headers
+- **AuthSessionId** - Identifier for current session
+- **AuthSessionSecret** - Secret for current session
 
-### Response
- Key | Type | Description
---- | --- | ---
-**userId** | Integer | User identifier for account
-**username** | String | Username for account
-**email** | String | E-mail address for account
+## Parameters
+- **userId** - Identifier for current user
+
+## Body
+- **username** - Username to update to
+- **email** - E-mail address to update to
+
+## Example Request
+`GET /account/1692/profile`
+```
+{
+ username: "NewUsername",
+ email: "Email@Email.com"
+}
+```
+
+## Example Error
+`GET /account/10/profile`
+```
+{
+ error: "Could not find user profile"
+}
+```
+
+## Example Response
+`GET /account/1692/profile`
+```
+{
+ success: true
+}
+```
