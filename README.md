@@ -16,6 +16,7 @@ Update the profile for a specific user account.
 
 ### Example Request
 `GET /account/1692/profile`
+
 ```
 {
  username: "NewUsername",
@@ -23,16 +24,7 @@ Update the profile for a specific user account.
 }
 ```
 
-### Example Error
-`GET /account/10/profile`
-```
-{
- error: "Could not find user profile"
-}
-```
-
 ### Example Response
-`GET /account/1692/profile`
 ```
 {
  success: true
