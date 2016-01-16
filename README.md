@@ -3,18 +3,18 @@ Update the profile for a specific user account.
 
 `PUT /account/{userId}/profile`
 
-## Headers
+### Headers
 - **AuthSessionId** - Identifier for current session
 - **AuthSessionSecret** - Secret for current session
 
-## Parameters
+### Parameters
 - **userId** - Identifier for current user
 
-## Body
+### Body
 - **username** - Username to update to
 - **email** - E-mail address to update to
 
-## Example Request
+### Example Request
 `GET /account/1692/profile`
 ```
 {
@@ -23,7 +23,7 @@ Update the profile for a specific user account.
 }
 ```
 
-## Example Error
+### Example Error
 `GET /account/10/profile`
 ```
 {
@@ -31,7 +31,7 @@ Update the profile for a specific user account.
 }
 ```
 
-## Example Response
+### Example Response
 `GET /account/1692/profile`
 ```
 {
