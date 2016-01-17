@@ -20,7 +20,7 @@ Update the profile for a specific user account.
 ### Example Request
 `GET /account/1692/profile`
 
-```
+```javascript
 {
 	username: "NewUsername",
 	email: "Email@Email.com"
@@ -28,7 +28,9 @@ Update the profile for a specific user account.
 ```
 
 ### Example Response
-```
+`200 OK`
+
+```javascript
 {
 	userId: 1692
 }
