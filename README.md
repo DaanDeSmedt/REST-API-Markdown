@@ -17,6 +17,11 @@ Update the profile for a specific user account.
 ### Response
 - **userId** - Identifier for the user
 
+### Errors
+- ErrorCode1
+- ErrorCode2
+- ErrorCode3
+
 ### Example Request
 `GET /account/1692/profile`
 
