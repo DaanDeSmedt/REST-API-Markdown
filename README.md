@@ -18,9 +18,9 @@ Update the profile for a specific user account.
 - **userId** - Identifier for the user
 
 ### Errors
-- ErrorCode1
-- ErrorCode2
-- ErrorCode3
+- **ErrorCode1** - Caused by missing identifier
+- **ErrorCode2** - Username was not given
+- **ErrorCode3** - Server exploded
 
 ### Example Request
 `GET /account/1692/profile`
